@@ -74,8 +74,8 @@
 <body>
 
 
-<section class="hero" style="background: url('static/images/DOZE_full.jpeg') no-repeat center center; background-size: contain; height: 100vh; position: relative;">
-  <div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3);"></div>
+<section class="hero" id="hero-section" style="background: url('static/images/DOZE_full.jpeg') no-repeat center center; background-size: contain; position: relative;">
+  <div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 1);"></div>
   <div class="hero-body" style="position: relative; z-index: 1;">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
@@ -125,6 +125,17 @@
   </div>
 </section>
 
+
+<script>
+  window.onload = function() {
+    var heroSection = document.getElementById('hero-section');
+    var img = new Image();
+    img.src = 'static/images/DOZE_full.jpeg';
+    img.onload = function() {
+      heroSection.style.height = img.height + 'px';
+    };
+  };
+</script>
 
 <link rel="stylesheet" type="text/css" href="js/simple_style.css" />
 <script type="text/javascript" src="js/simple_swiper.js"></script>
