@@ -155,3 +155,27 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+
+.hero {
+  background-image: url('static/images/DOZE_full.jpeg');
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  width: 100%;
+  height: auto;
+}
+
+.hero-body {
+  padding: 0; /* Removes any default padding */
+}
+
+.hero .container {
+  height: 100%; /* Ensures the container takes full height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .columns {
+  height: 100%; /* Ensures the columns take full height */
+}
