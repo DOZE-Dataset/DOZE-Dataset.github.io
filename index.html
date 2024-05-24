@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="DOZE">
+  <meta name="description" content="DOZE">
   <meta name="keywords" content="Object Navigation, Large Language Model, Zero-shot">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DOZE</title>
@@ -22,15 +22,13 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -41,205 +39,205 @@
   <script src="./static/js/index.js"></script>
 </head>
 
-  <style>
+<style>
+  #main {
+    position: relative;
+    ;
+    width: 1200px;
+  }
 
-    #main{
-        position: relative;;
-        width: 1200px;
-    }
+  .box {
+    float: left;
+    padding: 15px 0 0 15px;
+    /*        background-color: red;*/
+  }
 
-    .box{
-        float: left;
-        padding: 15px 0 0 15px;
-/*        background-color: red;*/
-    }
+  .pic {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
 
-    .pic{
-        width: 500px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #fff;
-    }
-
-    .pic img{
-        width: 500px;
-    }
-
-  </style>
-
+  .pic img {
+    width: 500px;
+  }
+</style>
 
 
-  
+
+
 <body>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DOZE:</h1>
-          <h2 class="title is-2 publication-title">A Dataset for Open-Vocabulary Zero-Shot Object Navigation in Dynamic Environments</h2>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              Ji Ma<sup>1*</sup>, Hongming Dai<sup>2*</sup>, Yao Mu<sup>3</sup>, Pengying Wu<sup>1</sup>, Hao Wang<sup>1</sup>, Xiaowei Chi<sup>4</sup>, Yang Fei<sup>1</sup>, Shanghang Zhang<sup>1†</sup>, Chang Liu<sup>1†</sup></span>
-          </div>
-          <div class="is-size-7 institutions">
-            <span class="institution-block">
-              <sup>1</sup>Peking University, <sup>2</sup>National University of Singapore, <sup>3</sup>The University of Hong Kong, <sup>4</sup>The Hong Kong University of Science and Technology 
-          </div>
-          <div class="is-size-7 illustrations">
-            <span class="illustration">
-            <sup>*</sup>Equal contribution, <sup>†</sup>Equal advising
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/JiMa25/DOZE-Dataset"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Demo Link. -->
-              <span class="link-block">
-                <a href="https://openxlab.org.cn/datasets/JiMa25/DOZE"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-database"></i>
-                  </span>
-                  <span>Dataset</span>
-                  </a>
+            <h1 class="title is-1 publication-title">DOZE:</h1>
+            <h2 class="title is-2 publication-title">A Dataset for Open-Vocabulary Zero-Shot Object Navigation in
+              Dynamic Environments</h2>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Ji Ma<sup>1*</sup>, Hongming Dai<sup>2*</sup>, Yao Mu<sup>3</sup>, Pengying Wu<sup>1</sup>, Hao
+                Wang<sup>1</sup>, Xiaowei Chi<sup>4</sup>, Yang Fei<sup>1</sup>, Shanghang Zhang<sup>1†</sup>, Chang
+                Liu<sup>1†</sup></span>
+            </div>
+            <div class="is-size-7 institutions">
+              <span class="institution-block">
+                <sup>1</sup>Peking University, <sup>2</sup>National University of Singapore, <sup>3</sup>The University
+                of Hong Kong, <sup>4</sup>The Hong Kong University of Science and Technology
+            </div>
+            <div class="is-size-7 illustrations">
+              <span class="illustration">
+                <sup>*</sup>Equal contribution, <sup>†</sup>Equal advising
             </div>
 
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/JiMa25/DOZE-Dataset"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Demo Link. -->
+                <span class="link-block">
+                  <a href="https://openxlab.org.cn/datasets/JiMa25/DOZE"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-database"></i>
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<link rel="stylesheet" type="text/css" href="js/simple_style.css" />
-<script type="text/javascript" src="js/simple_swiper.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/simple_style.css" />
+  <script type="text/javascript" src="js/simple_swiper.js"></script>
 
 
-  
-<section class="section">
-  <div class="container is-max-desktop">
-    
-    
 
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Zero-Shot Object Navigation (ZSON) requires agents to autonomously locate and approach unseen objects in unfamiliar environments and has emerged as a particularly challenging task within the domain of Embodied AI.
-            Existing datasets for developing ZSON algorithms lack consideration of dynamic obstacles, object attribute diversity, and scene texts, thus exhibiting noticeable discrepancy from real-world situations. 
-            To address these issues, we propose a Dataset for Open-Vocabulary Zero-Shot Object Navigation in Dynamic Environments (DOZE) that comprises ten high-fidelity 3D scenes with over 18k tasks, aiming to mimic complex, dynamic real-world scenarios. 
-            Specifically, DOZE scenes feature multiple moving humanoid obstacles, a wide array of open-vocabulary objects, diverse distinct-attribute objects, and valuable textual hints. 
-            Besides, different from existing datasets that only provide collision checking between the agent and static obstacles, we enhance DOZE by integrating capabilities for detecting collisions between the agent and moving obstacles. 
-            This novel functionality enables evaluation of the agents' collision avoidance abilities in dynamic environments. 
-            We test four representative ZSON methods on DOZE, revealing substantial room for improvement in existing approaches concerning navigation efficiency, safety, and object recognition accuracy. Our dataset could be found at https://DOZE-Dataset.github.io/.
-          </p>
-          <p>
-          </p>
+  <section class="section">
+    <div class="container is-max-desktop">
+
+
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Zero-Shot Object Navigation (ZSON) requires agents to autonomously locate and approach unseen objects in
+              unfamiliar environments and has emerged as a particularly challenging task within the domain of Embodied
+              AI.
+              Existing datasets for developing ZSON algorithms lack consideration of dynamic obstacles, object attribute
+              diversity, and scene texts, thus exhibiting noticeable discrepancy from real-world situations.
+              To address these issues, we propose a Dataset for Open-Vocabulary Zero-Shot Object Navigation in Dynamic
+              Environments (DOZE) that comprises ten high-fidelity 3D scenes with over 18k tasks, aiming to mimic
+              complex, dynamic real-world scenarios.
+              Specifically, DOZE scenes feature multiple moving humanoid obstacles, a wide array of open-vocabulary
+              objects, diverse distinct-attribute objects, and valuable textual hints.
+              Besides, different from existing datasets that only provide collision checking between the agent and
+              static obstacles, we enhance DOZE by integrating capabilities for detecting collisions between the agent
+              and moving obstacles.
+              This novel functionality enables evaluation of the agents' collision avoidance abilities in dynamic
+              environments.
+              We test four representative ZSON methods on DOZE, revealing substantial room for improvement in existing
+              approaches concerning navigation efficiency, safety, and object recognition accuracy. Our dataset could be
+              found at https://DOZE-Dataset.github.io/.
+            </p>
+            <p>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <!--/ Abstract. -->
-    <br>
-    <br>
+      <!--/ Abstract. -->
+      <br>
+      <br>
 
-        <!-- Teaser -->
-        <div class="columns is-centered has-text-centered">
-      <div class="column is-six-fifths">
-      <h2 class="title is-3">Dataset Overview</h2>
-        <div class="content has-text-justified">
-        </div>  
-        <img id="model" width="100%" src="static/images/top226.jpg">
-        <br>
-        <br>
+      <!-- Teaser -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-six-fifths">
+          <h2 class="title is-3">Dataset Overview</h2>
+          <div class="content has-text-justified">
+          </div>
+          <img id="model" width="100%" src="static/images/top226.jpg">
+          <br>
+          <br>
 
+        </div>
       </div>
-    </div>
-         <br>
-        <br>  
-    <!-- Paper model -->
+      <br>
+      <br>
+      <!-- Paper model -->
 
-        <div class="columns is-centered has-text-centered">
-      <div class="column is-six-fifths">
-        <h2 class="title is-3">Example items in DOZE</h2>
- 
-        <img id="model" width="100%" src="static/images/6pictures.png">
-        <div class="content has-text-justified">
-          <p>
-            <b>(a) A static humanoid obstacle that obscures a basketball. (b) A dynamic humanoid obstacle walking on the floor. (c) An open-vocabulary object "Stegosaurus model". (d) Two distinct-spatial mugs: left next to a laptop, right next to an alarm clock. (e) Two distinct-appearance basketballs: left with orange color, right with gray color. (f) A hint whiteboard indicating the location of a tomato.</b>
-          </p>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-six-fifths">
+          <h2 class="title is-3">Example items in DOZE</h2>
 
-        </div> 
-        <br>
-        <br>
+          <img id="model" width="100%" src="static/images/6pictures.png">
+          <div class="content has-text-justified">
+            <p>
+              <b>(a) A static humanoid obstacle that obscures a basketball. (b) A dynamic humanoid obstacle walking on
+                the floor. (c) An open-vocabulary object "Stegosaurus model". (d) Two distinct-spatial mugs: left next
+                to a laptop, right next to an alarm clock. (e) Two distinct-appearance basketballs: left with orange
+                color, right with gray color. (f) A hint whiteboard indicating the location of a tomato.</b>
+            </p>
 
+          </div>
+          <br>
+          <br>
+
+        </div>
       </div>
+
+      <br>
+      <br>
+      <br>
     </div>
-
-    <br>
-    <br>
-    <br>
-    <!-- Simulation Experiments -->
-
-        <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-six-fifths">
-        <h2 class="title is-3">Simulation Experiments</h2>
-        <div class="content has-text-justified">
+  </section>
 
 
-        </div>  
-        <img id="model" width="100%" src="static/images/result.png">
- 
-        <br>
-        <br>
-
-      </div>
-    </div> -->
-    
-  </div>
-</section>
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{ma2024doze,
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{ma2024doze,
       title={DOZE: A Dataset for Open-Vocabulary Zero-Shot Object Navigation in Dynamic Environments},
       author={Ma, Ji and Dai, Hongming and Mu, Yao and Wu, Pengying and Wang, Hao and Chi, Xiaowei and Fei, Yang and Zhang, Shanghang and Liu, Chang},
       journal={arXiv preprint arXiv:2402.19007},
       year={2024}
     }</code></pre>
-  </div>
-</section>
+    </div>
+  </section>
 
 
-<section class="section" id="Acknowledgement">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Acknowledgement</h2>
-    <p>
-      This website is adapted from <a
-      href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under a <a rel="license"
-                                          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-      Commons Attribution-ShareAlike 4.0 International License</a>.
-    </p>
-  </div>
-</section>
+  <section class="section" id="Acknowledgement">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Acknowledgement</h2>
+      <p>
+        This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under
+        a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+          Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+    </div>
+  </section>
 
 
 </body>
+
 </html>
